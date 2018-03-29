@@ -3,4 +3,17 @@
 }
 @model MyModel
 
-Hooray success post Start Date : @Model.StartDate and End Date : @Model.EndDate
+<div>
+    <div class="form-group">
+        <label asp-for="StartDate" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <date-picker for="StartDate"></date-picker>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="EndDate" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <date-picker for="EndDate"></date-picker>
+        </div>
+    </div>
+</div>
